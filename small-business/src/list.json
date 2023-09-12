@@ -1,0 +1,19 @@
+[
+    {
+        "Id" : 1,
+       "Name":"Home Slice Pizza",
+       "Address":18,
+       "Hours":8,
+       "Description":307,
+       "Map":130
+    },
+    {
+        "Id" : 2,
+       "Name":"Home Slice Pizza",
+       "Address":18,
+       "Hours":8,
+       "Description":307,
+       "Map":130
+    }
+    
+]
