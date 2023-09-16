@@ -3,7 +3,7 @@ export default {
         username: 'Xander',
         email: 'test-user@example.com'
     },
-    cars:[
+    list:[
       {
          "id": 1,
          "Name":"Home SLice Pizza",

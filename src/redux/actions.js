@@ -1,14 +1,14 @@
-export const addCar = (car) => {
+export const addList = (list) => {
     return {
-        type: "ADD_CAR",
-        value: car
+        type: "ADD_LIST",
+        value: list
     }
   }
 
 
-  export const removeCar = (index) => {
+  export const removeList = (index) => {
     return {
-        type: "REMOVE_CAR",
+        type: "REMOVE_List",
         value: index
     }
   }

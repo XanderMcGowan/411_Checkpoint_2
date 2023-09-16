@@ -8,7 +8,7 @@ import {
 } from '@mui/material'
 import Dashboard from '../containers/Dashboard'
 
-class AddCar extends Component {
+class AddList extends Component {
     state = {
         open: false,
         Name: '',
@@ -30,8 +30,8 @@ class AddCar extends Component {
         const payload = { ...this.state }
         payload.id = this.props.carTotal + 1
         delete payload.open
-        console.log("THE CAR", payload)
-        this.props.addCar(payload)
+        console.log("THE LIST", payload)
+        this.props.addList(payload)
         this.setState({ open: false })
     }
 
@@ -53,7 +53,7 @@ class AddCar extends Component {
                     <h1>Add Listing:</h1>
                     <Button
                         variant="contained"
-                        className="add-car"
+                        className="add-lsit"
                         onClick={this.toggleDialog}
                     >
                         Add Listing
@@ -64,7 +64,7 @@ class AddCar extends Component {
                 </Dashboard>
                 <div>
                     <Dialog open={this.state.open} onClose={this.toggleDialog} >
-                        <DialogTitle>Add New Car</DialogTitle>
+                        <DialogTitle>Add New Listing</DialogTitle>
                         <DialogContent>
                             <form 
                                 onSubmit={this.handleSubmit}
@@ -72,25 +72,25 @@ class AddCar extends Component {
                                 <TextField 
                                     id="name" 
                                     placeholder="Name" 
-                                    value={this.state.name} 
+                                    value={this.state.Name} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
                                     id="description" 
                                     placeholder="Description" 
-                                    value={this.state.mpg} 
+                                    value={this.state.Description} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
                                     id="hours" 
                                     placeholder="Hours" 
-                                    value={this.state.cylinders} 
+                                    value={this.state.Hours} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <TextField 
                                     id="address" 
                                     placeholder="Address" 
-                                    value={this.state.horsepower} 
+                                    value={this.state.Address} 
                                     onChange={this.handleTextChange} 
                                     required />
                                 <br />
@@ -104,4 +104,4 @@ class AddCar extends Component {
     }
 }
 
-export default AddCar
+export default AddList

@@ -7,18 +7,18 @@ const Home = (props) => {
     return (
         <div className="card-container">
             {/* Change cars to props.cars and remove the cars.json import above */}
-            {props.cars.map((car, idx) => (
+            {props.list.map((list, idx) => (
                 <Card key={idx} className="card">
                     <CardContent className="text-gray">
-                        <span>{car.name}</span>
+                        <span>{list.name}</span>
                         <ul>
-                        <li>Name: {car["Name"]}</li>
-                        <li>Cylinders: {car["cylinders"]}</li>
-                        <li>Horsepower: {car["horsepower"]}</li>
+                        <li>Name: {list["Name"]}</li>
+                        <li>Cylinders: {list["cylinders"]}</li>
+                        <li>Horsepower: {list["horsepower"]}</li>
                         </ul>
                     </CardContent>
                     <Divider />
-                        <Link to={`/car/${car.id}`}>See More Details</Link>
+                        <Link to={`/car/${list.id}`}>See More Details</Link>
 
                 </Card>
             ))}

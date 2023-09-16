@@ -20,7 +20,7 @@ const Navigation = () => {
                         <Link to="/dashboard">Dashboard</Link>
                     </li>
                     <li className="nav-list-item">
-                        <Link to="/addcar">Add Car</Link>
+                        <Link to="/addlist">Add List</Link>
                     </li>
                     <li className="nav-list-item">
                         <Link to="/login">Login</Link>

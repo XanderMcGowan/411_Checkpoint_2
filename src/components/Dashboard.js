@@ -23,13 +23,13 @@ const Dashboard = (props) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                {props.cars.map((car, id) => (
+                {props.list.map((list, id) => (
                     <TableRow key={id}>
 
-                        <TableCell><Link to={`/car/${car.id}`}>{car.Name}</Link></TableCell>
-                        <TableCell>{car["Description"]}</TableCell>
-                        <TableCell>{car["Hours"]}</TableCell>
-                        <TableCell>{car["Address"]}</TableCell>
+                        <TableCell><Link to={`/list/${list.id}`}>{list.Name}</Link></TableCell>
+                        <TableCell>{list["Description"]}</TableCell>
+                        <TableCell>{list["Hours"]}</TableCell>
+                        <TableCell>{list["Address"]}</TableCell>
                     </TableRow>
                 ))}
                 </TableBody>

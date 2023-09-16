@@ -1,17 +1,17 @@
 import { connect } from 'react-redux'
 import Dashboard from '../components/Dashboard'
-import { removeCar } from '../redux/actions'
+import { removeList } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {
         user: state.user,
-        cars: state.cars
+        list: state.list
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        removeCar: (index) => dispatch(removeCar(index)),
+        removeList: (index) => dispatch(removeList(index)),
 
     }
 }
